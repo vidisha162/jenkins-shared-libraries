@@ -6,4 +6,5 @@ def call(String Project, String Image, String dockerhubuser){
         bat "docker login -u %dockerHubUser% -p %dockerHubPass%"
         bat "docker tag vaultify-backend %dockerHubUser%/vaultify-backend"
         bat "docker push %dockerHubUser%/vaultify-backend"
+   }
 }
